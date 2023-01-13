@@ -137,15 +137,15 @@ export default function Home() {
                 <div className=' text-blue-300'>
                   <GrMysql /> 
                 </div>
-                <div className=' text-orange-600'>
+                {/* <div className=' text-orange-600'>
                   <AiFillHtml5 />
                 </div>
                 <div className=' text-blue-700'>
                   <FaCss3Alt /> 
                 </div>
                 <div className=' text-red-500'>
-                  <DiReact />
-                </div>
+                  <DiReact /> */}
+                {/* </div> */}
               </div>
             </div>
           </div>
@@ -166,7 +166,7 @@ export default function Home() {
               I always try to <span className=' text-teal-500'>make clean code</span> complying with design patterns and some quality attributes.
             </p>*/}
           </div>
-          <div className='md:flex-grid lg:flex gap-10'>
+          <div className='sm:flex md:flex-grid lg:flex gap-10'>
             <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
               {/* <Image src={design} width={100} height={100} /> */}
               <h3 className='text-lg font-medium pb-2'>Fully Responsible 💼</h3>
