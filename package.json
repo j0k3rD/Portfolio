@@ -2,7 +2,7 @@
   "name": "react-portfolio",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://j0k3rd.github.io/Portfolio",
+  "homepage": "https://j0k3rD.github.io/Portfolio",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
