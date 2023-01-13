@@ -6,10 +6,10 @@ import {FaGitAlt, FaCss3Alt} from 'react-icons/fa'
 import {GrMysql} from 'react-icons/gr'
 import {SiGmail} from 'react-icons/si'
 import Image from 'next/image';
-import deved from '../public/dev-ed-wave.png';
-import web1 from '../public/poetizer.png'
-import web2 from '../public/bla.jpg'
-import web3 from '../public/wifi.png'
+import deved from '../docs/dev-ed-wave.png';
+import web1 from '../docs/poetizer.png'
+import web2 from '../docs/bla.jpg'
+import web3 from '../docs/wifi.png'
 import { useState } from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'
 import React from 'react';

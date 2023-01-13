@@ -20,7 +20,7 @@ a {
 }
 @font-face {
   font-family: "burtons";
-  src: url("../public/Burtons.otf");
+  src: url("../docs/Burtons.otf");
 }
 
 .card:hover {
