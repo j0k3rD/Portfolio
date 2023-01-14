@@ -37,7 +37,7 @@ export default function Home() {
             className="btn btn-outline-secondary border-0"
             rel="noreferrer"
           >
-            Go to {title}
+            Go to GitHub Repo
           </a>
         </div>
       </div>
@@ -87,7 +87,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* ----------- MAIN BAR ----------- */}
-      <main className='bg-white px-10 sm:px-1 md:px-20 lg:px-40 dark:bg-gray-900'>
+      <main className=' main-m bg-white px-10 sm:px-1 md:px-20 lg:px-40 dark:bg-gray-900'>
         <section className='sect'>
           <nav className='nav-bar pt-10 flex justify-between'>
             <h1 className='text-ini text-xl font-burtons'>developedbyaaron</h1>
@@ -99,7 +99,7 @@ export default function Home() {
               </li>
               <li>
                 <a 
-                  className='btn-d bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' 
+                  className='btn-d bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-2 py-1.5 rounded-md ml-8' 
                   href="#">
                     Download CV
                 </a>
@@ -113,18 +113,18 @@ export default function Home() {
               <Image src={deved} layout="fill" objectFit='cover' />
           </div>
           <div className='text-center'>
-            <h2 className='text-5xl py-2 text-teal-600 font-medium md:text-6xl'>
+            <h2 className='name text-5xl py-2 text-teal-600 font-medium md:text-6xl'>
               Hi. I'm Aaron 🖐️
             </h2>
             {/* <h3 className='text-2xl py-2 md:text-3xl'>Informatics Engineer Student</h3> */}
-            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto'>
+            <p className='bio text-md py-1 leading-8 text-gray-800 md:text-xl max-w-xl mx-auto'>
               My name is Aaron Moya, i'm a informatics engineering student at the University of Mendoza. I'm constantly learning new things. I like to read about programming and hacking.
             </p>
           </div>
           <div>
             <div className='text-4xl text-center'>
               <h3 className='mb-7 mt-7 font-black'>My skills</h3>
-              <div className='text-6xl flex justify-center gap-16 p-3 md:grid sm:grid lg:flex'>
+              <div className='icons-skills text-6xl flex justify-center gap-16 p-3 md:grid sm:grid lg:flex'>
                 <div className=' text-blue-600'>
                   <DiPython /> 
                 </div>
@@ -155,7 +155,7 @@ export default function Home() {
         <section>
           {/* ----------- SERVICES ----------- */}
           <div>
-            <h3 className='text-3xl py-1 font-black mt-10'>Services</h3>
+            <h3 className='text-services text-3xl py-1 font-black mt-10'>Services</h3>
             {/* <p className='text-md py-2 leading-8 text-gray-800'>
               I work <span className=' text-teal-500'>hard</span> and try to finish my work in a timely manner.
             </p>
@@ -167,7 +167,7 @@ export default function Home() {
             </p>*/}
           </div>
           <div className='sm:flex md:flex-grid lg:flex gap-10'>
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
+            <div className='card1 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
               {/* <Image src={design} width={100} height={100} /> */}
               <h3 className='text-lg font-medium pb-2'>Fully Responsible 💼</h3>
               <p className='py-2'>
@@ -179,7 +179,7 @@ export default function Home() {
               <p className='text-gray-800 py-1'>Figma</p> */}
             </div>
 
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
+            <div className='card2 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
               {/* <Image src={code} width={100} height={100} /> */}
               <h3 className='text-lg font-medium pb-2'>Social Media Integration 👍🏻</h3>
               <p className='py-2'>
@@ -188,7 +188,7 @@ export default function Home() {
               {/* <h4 className='py-4 text-teal-600'>Designs tools I use</h4> */}
             </div>
 
-            <div className='text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
+            <div className='card3 text-center shadow-lg p-10 rounded-xl my-10 dark:bg-white'>
               {/* <Image src={consulting} width={100} height={100} /> */}
               <h3 className='text-lg font-medium pb-2'>Development 🧑🏻‍💻</h3>
               <p className='py-2'>
@@ -202,17 +202,17 @@ export default function Home() {
         <section>
           {/* ----------- PORTFOLIO ----------- */}
           <div>
-            <h3 className='text-3xl py-1 font-black'>My latest projects</h3>
-            <p className='text-md py-2 leading-8 text-gray-800'>
+            <h3 className='text-port text-3xl py-1 font-black'>My latest projects</h3>
+            <p className='desc-port text-md py-2 leading-8 text-gray-800'>
               Here you can see projects I have work on!
               {/* I work <span className=' text-teal-500'>hard</span> and try to finish my work in a timely manner.
               I adapt well to teamwork and <span className=' text-teal-500'>I like to contribute my ideas</span> to the group. */}
             </p>
-            <div className="container d-flex justify-content-center align-items-center h-100">
+            <div className="card-cont container d-flex justify-content-center align-items-center h-100">
               <div className="row">
                 {cards.map(({ title, image, url, id }) => (
                   <div className="col-md-4" key={id}>
-                    <Card imageSource={image} title={title} url={url} />
+                    <Card imageSource={image} title={title} url={url}/>
                   </div>
                 ))}
               </div>
@@ -223,9 +223,9 @@ export default function Home() {
         <section>
           {/* ----------- CONTACT ----------- */}
           <div>
-            <h3 className='text-3xl py-1 font-black mt-10 mb-7'>Write Me</h3>
+            <h3 className='text-contact text-3xl py-1 font-black mt-10 mb-7'>Write Me</h3>
           </div>
-          <div className='text-5xl flex justify-center gap-16 p-3'>
+          <div className='icons-contact text-5xl flex justify-center gap-16 p-3'>
                 <div className='twitter'>
                   <a href="https://twitter.com/aaron_moya22">
                     <AiFillTwitterCircle /> 
@@ -242,7 +242,7 @@ export default function Home() {
                   </a>
                 </div>
             </div>
-            <div className='text-center font-medium flex justify-center p-3 gap-12'>
+            <div className='icons-text text-center font-medium flex justify-center p-3 gap-12'>
                 <div>
                   <p>Follow Me</p>
                 </div>
