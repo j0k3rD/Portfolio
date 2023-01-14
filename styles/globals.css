@@ -69,7 +69,7 @@ a {
   color: rgb(65, 65, 65);
 }
 
-@media screen and (min-width: 320px) {
+@media screen and (min-width: 310px) {
   .main-m {
     display: inline;
   }
@@ -130,22 +130,22 @@ a {
   .card1 {
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: 20px;
     width: 300px;
   }
   .card2 {
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 20px;
+    margin-top: 5px;
     margin-bottom: 20px;
     width: 300px;
   }
   .card3 {
     margin-left: 20px;
     margin-right: 20px;
-    margin-top: 20px;
-    margin-bottom: 20px;
+    margin-top: 5px;
+    margin-bottom: 10px;
     width: 300px;
   }
   .text-port {
