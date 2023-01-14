@@ -134,18 +134,20 @@ export default function Home() {
                 <div className=' text-orange-400'>
                   <FaGitAlt />
                 </div>
+              </div>
+              <div className='icons-skills text-6xl flex justify-center gap-16 p-3 md:grid sm:grid lg:flex'>
                 <div className=' text-blue-300'>
                   <GrMysql /> 
                 </div>
-                {/* <div className=' text-orange-600'>
+                <div className=' text-orange-600'>
                   <AiFillHtml5 />
                 </div>
                 <div className=' text-blue-700'>
                   <FaCss3Alt /> 
                 </div>
                 <div className=' text-red-500'>
-                  <DiReact /> */}
-                {/* </div> */}
+                  <DiReact />
+                </div>
               </div>
             </div>
           </div>
